@@ -28,5 +28,7 @@ const subjectSchema=new Schema({
         required:true,
         default:"3 months"
     }
-},
-{timestamps:true})
+},{timestamps:true})
+
+const Subject=mongoose.model("Subject",subjectSchema);
+export default Subject
